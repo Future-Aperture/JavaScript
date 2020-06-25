@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando DOM</title>
+</head>
+
+<style>
+    div#area{
+        font: normal 15pt Arial;
+        background-color: rgb(6, 194, 6);
+        color: white;
+        width: 100px;
+        height: 100px;
+        line-height: 100px;
+        text-align: center;
+        border-radius: 8px;
+
+    }   
+
+</style>
+
+
+<body>
+    <div id="area" onclick="clicar()">
+        interaja...
+    </div>  
+
+<script>
+    function clicar(){
+        var area = window.document.getElementById('area')
+        area.innerText = 'Clicaste'
+    }
+    function entrar()
+    
+      
+</script>
+
+
+</body>
+</html>

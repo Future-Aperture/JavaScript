@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo com DOM</title>
+</head>
+
+<style>
+
+body{
+    background-color: rgb(207, 210, 238);
+    color: rgb(94, 39, 50);
+    font: normal 14pt Arial;
+}
+
+</style>
+
+<body>
+    <h1>Estudos com o DOM</h1> 
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar <b>DOM</b> com Javascript</p>
+    <div id="msg">clique em mim</div>
+
+    <script>
+        var p1 = window.document.getElementsByTagName('p')[0] // pega elementos pelo nome 
+        var d = document.querySelector('div#msg') 
+        d.style.background = 'whitesmoke'
+    </script>
+
+</body>
+</html>
