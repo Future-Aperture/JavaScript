@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somar números</title>
+    <div id="resposta"></div>
+</head>
+
+
+<style>
+    body {
+        background-color: rgb(212, 202, 202);
+        font: Arial 20pt;
+    }
+
+    h1 {
+        text-align: center;
+        margin: flex;
+        font-size: 25px;
+        padding: 3px;
+        font-family: Arial, Helvetica, sans-serif;
+        
+    }
+
+    div#res {
+        text-align: left;
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(0, 0, 0);
+        margin-top: 15px;
+        margin-left: 35%;
+        font-size: 20px;
+        
+    }
+
+    div#variaveis {
+        text-align: center;
+    }
+    
+    input#tnx1, input#tnx2 { /*Caixas pra por o número*/
+        padding: 5px 7px;
+        border-radius: 20px;
+        outline: None;
+        cursor: pointer;
+    }
+
+    input#botao {
+        background-color: grey;
+        color: black;
+        border-radius: 8px;
+        outline: none;
+        padding: 2px 2px;
+        cursor: pointer;
+    }
+    
+</style>
+
+
+<body>
+
+<h1>Soma de números</h1>
+   
+<div id="variaveis">
+    <input type="number" name="tnx1" id="tnx1"> <strong>+</strong> 
+    <input type="number" name="tnx2" id="tnx2">
+    <input type="button" value="Somar" id="botao" onclick="Somar()"> 
+</div> 
+
+    <div id="res">Resposta:</div>
+
+
+<script>
+    function Somar() {
+        var tn1 = window.document.querySelector('input#tnx1')
+        var tn2 = window.document.querySelector('input#tnx2')
+        var res = window.document.getElementById('res')
+        var n1 = Number.parseInt(tn1.value)
+        var n2 = Number.parseInt(tn2.value)
+        var s = n1 + n2
+        res.innerHTML = `A soma entre ${n1} e ${n2} fica ${s}`
+
+    }    
+
+</script>
+
+</body>
+</html>

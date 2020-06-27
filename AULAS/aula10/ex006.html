@@ -23,18 +23,32 @@
 
 
 <body>
-    <div id="area" onclick="clicar()">
-        interaja...
+    <div id="area">
+        Clique 
     </div>  
 
 <script>
-    function clicar(){
-        var area = window.document.getElementById('area')
-        area.innerText = 'Clicaste'
+    // declaração variável
+    var a = window.document.getElementById('area')
+    a.addEventListener('click', clicar)
+    a.addEventListener('mouseenter', entrar)
+    a.addEventListener('mouseout', sair)
+
+
+    function clicar() {
+        a.innerText = 'Clicaste'
+        a.style.background = 'red'
     }
-    function entrar()
     
-      
+    function entrar() {
+        a.innerText = 'Entrou'
+        a.style.fontFamily = 'Comic Sans MS'
+    }
+
+    function sair() {
+        a.innerText = 'Saiu'
+        a.style.fontFamily = 'Comic Sans MS'
+    }
 </script>
 
 
