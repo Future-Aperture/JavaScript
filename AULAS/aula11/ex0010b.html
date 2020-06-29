@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fronteira</title>
+</head>
+
+<body>
+    <!--Título-->
+    <h1>Sistema de nacionalidades</h1>
+
+    <!--País digitado-->
+    País: <input type="text" name="pais" id="pais">
+    
+    <!--Botão-->
+    <input type="button" value="Verificar" onclick="clicar()">
+
+    <div id="res">
+
+    </div>
+<script>
+    function clicar() {
+        var país = document.getElementById('pais').value // ligação com o país digitado
+        var res = document.getElementById('res') // ligação com a resposta
+        res.innerHTML = `<p>O seu país é ${país}</p>`
+
+        if (país != 'Brasil') {
+            res.innerHTML += 'Estrangeiro!'
+        }  
+
+
+        }
+    
+
+
+
+
+</script>
+
+
+</body>
+</html>

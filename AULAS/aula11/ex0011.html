@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DETRAN THEOZIN DO TI</title>
+</head>
+
+<style>
+    div#titulo {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+</style>
+
+
+
+<body>
+
+    <!-- Título -->
+    <h1>Sistema de multas</h1>
+
+
+    <!--Caixa de texto-->
+    Velocidade do carro: <input type="number" name="txtvel" id="txtvel"> Km/h
+
+    <!--Botão-->
+    <input type="button" value="Verificar" id="botao" onclick="calcular()">
+
+    <div id="res">
+    </div>
+
+
+    <script>
+        function calcular() {
+            var txtv = document.getElementById('txtvel')
+            var res = document.getElementById('res')
+            var vel = Number(txtv.value)
+            res.innerHTML = `<p>A sua velocidade é de ${vel} Km/h</p>`
+
+            if (vel > 80) {
+                res.innerHTML += `<p>Multado! O limite de velocidade é de 80km/h</p>` // += pra nao aparecer na frente do outro
+            }
+            
+            res.innerHTML += `<p>Dirija com segurança!</p>`
+
+        }
+
+
+
+
+    </script>
+</body>
+
+</html>
