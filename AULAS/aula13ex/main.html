@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de idade</title>
+
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+</head>
+
+<body onload="carregar()"> 
+
+    <header>
+        <div id="titulo">
+            <p><h1>Verificador de idade</h1></p>
+        </div>     
+    </header>
+
+
+    <section>
+        <div>
+            <p>
+                Ano de nascimento: 
+                <input type="number" name="anonascimento" id="ano" min="0">
+            </p>
+
+            <p>
+                Sexo:
+                <input type="radio" name="radsex" id="masc"checked> <!--masculino-->
+                <label for="masc">Masculino</label>
+
+                <input type="radio" name="radsex" id="fem"> <!--feminino-->
+                <label for="fem">Feminino</label>
+            </p>
+
+            <p>
+                <input type="button" value="verificar" onclick="verificar()">
+            </p>
+
+
+
+
+        </div> 
+        
+        <div id="res">
+            Preencha os dados para ver a resposta!
+           
+        </div>
+
+
+
+    </section>
+
+<footer>
+    © okagawa
+</footer>
+    
+</body>
+</html>
