@@ -18,7 +18,7 @@ function verificar() {
         
         var genero = ''
 
-        if (fsex[0].checked) { // checa se é macho opressor
+        if (fsex[0].checked) { // checa se é homem
             genero = 'homem'
             if (idade > 0 && idade < 10) {
                 // crianca
@@ -38,7 +38,7 @@ function verificar() {
             }
 
         } 
-        else if (fsex[1].checked){ // checa se é cuie
+        else if (fsex[1].checked){ // checa se é mulher
             genero = 'mulher'
             if (idade > 0 && idade < 10) {
                 // crianca

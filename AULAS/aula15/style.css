@@ -1,0 +1,42 @@
+
+
+
+body {
+    background: rgb(72, 117, 214);
+    font: normal 15pt Arial;
+    
+}
+
+div#titulo {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+section {
+    background: whitesmoke;
+    margin: auto;
+    width: 500px;
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: black 5px 10px 4px;
+    
+}
+
+input#botaoVerificar {
+    border-radius: 8px;
+    outline: none;
+    background-color: white;
+    outline-color: black;
+    padding: 4px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+}
+
+input#inicio, input#final, input#passo {
+    padding: 4px;
+    border-radius: 4px;
+    outline-color: black;
+    
+}
+
