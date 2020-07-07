@@ -1,2 +1,4 @@
-# JavaScript-
-Este repositório serve para salvar tudo o que farei no curso de JavaScript
+# JavaScript
+Repositório pra guardar meus projetos/pratica das aulas de JavaScript
+
+
