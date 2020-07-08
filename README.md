@@ -1,4 +1,4 @@
 # JavaScript
-Repositório pra guardar meus projetos/pratica das aulas de JavaScript
+Repositório geral (por enquanto) de projetos/práticas em JavaScript
 
 
