@@ -1,0 +1,30 @@
+body {
+    background-color: rgb(181, 181, 235);
+    font: normal 20pt;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+div#titulo {
+    text-align: center;
+}
+
+div#circulo {
+    
+	width: 400px;
+	height: 400px;
+	border-radius: 50%;
+	border: 1px solid #000;
+    margin: auto;
+    cursor: pointer;
+    line-height: 400px;
+    font-size: large;
+    font-weight: bold;
+}
+input {
+    margin-top: 10px;
+}
+
+p { /* botao */
+    margin-top: 45%;
+}
