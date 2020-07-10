@@ -6,5 +6,6 @@ function atualizar() {
     let res = document.getElementById('circulo') // variavel da resposta
     let hora = data.getHours() // pega a hora
     let minuto = data.getMinutes() // pega o minuto
+
     res.innerHTML = `Dia: ${dia}//${mes}//${ano}` + ' ' + `Hora: ${hora}:${minuto}`
 }   
